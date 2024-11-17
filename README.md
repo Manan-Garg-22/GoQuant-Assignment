@@ -1,5 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-Created a Next.js crypto orderbook project fulfilling the criteria for GoQuant Frontend Application. The project displays a real-time orderbook for the BTC-USD trading pair, with 10 levels of best bids and asks, updating at regular intervals. It features a live Spread Indicator graph, an Orderbook Imbalance Indicator, and a Market Depth Chart, all of which update with each orderbook change. The application is fully responsive, ensuring compatibility across various screen sizes, from mobile devices to desktops. Additional features include color-coding for significant changes and the ability to switch between different trading pairs.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).Created a Next.js crypto orderbook project fulfilling the criteria for GoQuant Frontend Application. 
+
+The project displays a real-time orderbook for the BTC-USD trading pair, with 10 levels of best bids and asks, updating at regular intervals. 
+
+It features a live Spread Indicator graph, an Orderbook Imbalance Indicator, a Market Depth Chart, and Candlestick Chart, all of which update with each orderbook change. 
+
+The application is fully responsive, ensuring compatibility across various screen sizes, from mobile devices to desktops. 
+
+Additional features include color-coding for significant changes, various coins listings and the ability to switch between different trading pairs (BTC-USD, ETH-USD, XRP-USD, BNB-USD, SOL-USD, DOGE-USD, LTC-USD).
+
 ## Getting Started
 
 First, install the dependencies:
