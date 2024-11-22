@@ -18,7 +18,7 @@ export const fetchOrderbook = async (currencyPair) => {
   const symbol = symbolMap[currencyPair];
   
   // Make a GET request to the Binance API to fetch order book data
-  const response = await axios.get('https://api.binance.com/api/v3/depth', {
+  const response = await axios.get('https://api.binance.us/api/v3/depth', {
     params: {
       symbol: symbol,
       limit: 10, // Limit the number of order book levels to 10
@@ -32,7 +32,7 @@ export const fetchOhlcData = async (currencyPair) => {
   const symbol = symbolMap[currencyPair];
   
   // Make a GET request to the Binance API to fetch OHLC data (candlestick data)
-  const response = await axios.get('https://api.binance.com/api/v3/klines', {
+  const response = await axios.get('https://api.binance.us/api/v3/klines', {
     params: {
       symbol: symbol,
       interval: '1m', // 1-minute interval for OHLC data
