@@ -16,7 +16,7 @@ const CryptoListings = () => {
         // Fetch hourly price data for each symbol
         const responses = await Promise.all(
           symbols.map(symbol =>
-            fetch(`https://api.binance.com/api/v3/klines?symbol=${symbol}&interval=1h&limit=2`)
+            fetch(`https://api.binance.us/api/v3/klines?symbol=${symbol}&interval=1h&limit=2`)
               .then(res => res.json())
           )
         )
@@ -24,7 +24,7 @@ const CryptoListings = () => {
         // Fetch 24-hour ticker data for each symbol
         const tickerResponses = await Promise.all(
           symbols.map(symbol =>
-            fetch(`https://api.binance.com/api/v3/ticker/24hr?symbol=${symbol}`)
+            fetch(`https://api.binance.us/api/v3/ticker/24hr?symbol=${symbol}`)
               .then(res => res.json())
           )
         )
